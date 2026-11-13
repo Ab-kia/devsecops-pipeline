@@ -9,7 +9,7 @@ test('GET /health returns ok', async () => {
 test('GET /api/items returns a list', async () => {
   const res = await request(app).get('/api/items');
   expect(res.status).toBe(200);
-  expect(res.body.length).toBe(2);
+    expect(res.body.length).toBe(3);
 });
 test('GET /api/items/1 returns the notebook', async () => {
   const res = await request(app).get('/api/items/1');
