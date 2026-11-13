@@ -9,8 +9,13 @@
     "lint": "eslint .",
     "build": "node --check src/app.js && node --check src/server.js && echo Build check OK"
   },
-  "engines": { "node": ">=20" },
-  "dependencies": { "express": "^4.21.2" },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "minimist": "^1.2.8"
+  },
   "devDependencies": {
     "@eslint/js": "^9.0.0",
     "eslint": "^9.0.0",
